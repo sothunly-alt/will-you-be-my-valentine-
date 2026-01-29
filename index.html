@@ -299,7 +299,7 @@
                 // Add romantic message
                 setTimeout(() => {
                     const h1 = document.querySelector('h1');
-                    h1.textContent = "You've made me the happiest person! ❤️";
+                    h1.textContent = "You've made me the happiest person!";
                     h1.style.color = '#ff4081';
                     h1.style.fontSize = '36px';
                 }, 1000);
@@ -318,17 +318,17 @@
                 noBtn.dataset.clickCount = parseInt(noBtn.dataset.clickCount) + 1;
                 
                 if (parseInt(noBtn.dataset.clickCount) > 3) {
-                    document.querySelector('h1').textContent = "Aww, don't be like that! ❤️ Please be my Valentine?";
+                    document.querySelector('h1').textContent = "Aww, don't be like that! Please be my Valentine?";
                 }
                 
                 if (parseInt(noBtn.dataset.clickCount) > 6) {
-                    document.querySelector('h1').textContent = "I'm not giving up! You have to say yes! 😘";
+                    document.querySelector('h1').textContent = "I'm not giving up! You have to say yes! ";
                 }
                 
                 if (parseInt(noBtn.dataset.clickCount) > 10) {
                     // Make the no button smaller
                     noBtn.style.transform = 'scale(0.8)';
-                    document.querySelector('h1').textContent = "Okay, okay... I'll make it easier for you ❤️";
+                    document.querySelector('h1').textContent = "Okay, okay... I'll make it easier for you! ";
                 }
             });
             
@@ -347,4 +347,5 @@
         });
     </script>
 </body>
+
 </html>
